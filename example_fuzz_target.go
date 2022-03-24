@@ -1,9 +1,10 @@
-package example
+package main
 
 import (
 	"fmt"
 	"os"
 	"bufio"
+	includes "github.com/infosecual/nosy-v2/includes"
 )
 
 /*
@@ -33,21 +34,6 @@ type complex_struct struct {
 	q bool
 }
 
-func guess_int(x int) bool {
-	if x == 5 {
-		return true
-	}
-	return false
-}
-
-func guess_string(x string) bool {
-        if x == "this is a long string, too hard to bruteforce quickly\n" {
-                return true
-        }
-        return false
-}
-
-
 func main() {
 
 	// test int
@@ -58,7 +44,7 @@ func main() {
 		return
 	}
 
-	if guess_int(x ) == false {
+	if includes.Guess_int(x ) == false {
 		fmt.Println("failed int check")
 		return
 	}
@@ -69,7 +55,7 @@ func main() {
         fmt.Println("enter a string:")
 	reader := bufio.NewReader(os.Stdin)
 	y, _ = reader.ReadString('\n')
-        if guess_string(y) == false {
+        if includes.Guess_string(y) == false {
                 fmt.Println("failed string check")
                 return
         }
