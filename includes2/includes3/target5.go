@@ -12,11 +12,11 @@ func main() {
 
 // SayHello says Hello
 func SayHello5(words []string) {
-    fmt.Println(joinStrings(words))
+    fmt.Println(JoinStrings(words))
 }
 
-// joinStrings joins strings
-func joinStrings5(words []string) string {
+// JoinStrings joins strings
+func JoinStrings5(words []string) string {
     return strings.Join(words, ", ")
 }
 
@@ -24,7 +24,7 @@ type StringToAdd struct {
         Name string
 }
 
-func (s StringToAdd) appendFoo() string {
+func (s StringToAdd) AppendFoo() string {
         return s.Name + "-foo!"
 }
 
@@ -32,19 +32,19 @@ type IntToAdd struct {
         A int
 }
 
-func (a IntToAdd) appendInt(b int) int {
+func (a IntToAdd) AppendInt(b int) int {
         return a.A + b
 }
 
-func addInts(int1, int2 int) int {
+func AddInts(int1, int2 int) int {
         return int1 + int2
 }
 
-func returnInts(int1, int2 int) (int, int) {
+func ReturnInts(int1, int2 int) (int, int) {
         return int1, int2
 }
 
-func addIntsAndString(int1, int2 int, this string, that []string) (int, string, []string) {
+func AddIntsAndString(int1, int2 int, this string, that []string) (int, string, []string) {
         return int1 + int2, this, that
 }
 

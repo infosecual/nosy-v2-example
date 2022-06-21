@@ -15,26 +15,26 @@ func main() {
     words := []string{hello, world}
     SayHello(words)
     s := StringToAdd{Name:"add to me "}
-    fmt.Println(s.appendFoo())
+    fmt.Println(s.AppendFoo())
     Int := IntToAdd{A:5}
-    fmt.Println(Int.appendInt(10))
+    fmt.Println(Int.AppendInt(10))
 }
 
 // SayHello says Hello
 func SayHello(words []string) {
-    fmt.Println(joinStrings(words))
+    fmt.Println(JoinStrings(words))
 }
 
-// joinStrings joins strings
-func joinStrings(words []string) string {
+// JoinStrings joins strings
+func JoinStrings(words []string) string {
     return strings.Join(words, ", ")
 }
 
-func addInts(int1, int2 int) int {
+func AddInts(int1, int2 int) int {
         return int1 + int2
 }
 
-func (s StringToAdd) appendFoo() string {
+func (s StringToAdd) AppendFoo() string {
 	return s.Name + "-foo!"
 }
 
@@ -42,6 +42,6 @@ type IntToAdd struct {
         A int
 }
 
-func (a IntToAdd) appendInt(b int) int {
+func (a IntToAdd) AppendInt(b int) int {
 	return a.A + b
 }

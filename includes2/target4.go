@@ -12,10 +12,10 @@ func main() {
 
 // SayHello says Hello
 func SayHello4(words []string) {
-    fmt.Println(joinStrings(words))
+    fmt.Println(JoinStrings(words))
 }
 
-// joinStrings joins strings
-func joinStrings4(words []string) string {
+// JoinStrings joins strings
+func JoinStrings4(words []string) string {
     return strings.Join(words, ", ")
 }
