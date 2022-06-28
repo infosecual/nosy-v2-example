@@ -7,12 +7,12 @@ func main() {
     hello := "Hello"
     world := "World"
     words := []string{hello, world}
-    SayHello(words)
+    SayHello5(words)
 }
 
 // SayHello says Hello
 func SayHello5(words []string) {
-    fmt.Println(JoinStrings(words))
+    fmt.Println(JoinStrings5(words))
 }
 
 // JoinStrings joins strings
