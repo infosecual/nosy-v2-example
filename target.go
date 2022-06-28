@@ -30,7 +30,7 @@ func JoinStrings(words []string) string {
     return strings.Join(words, ", ")
 }
 
-func AddInts(int1, int2 int) int {
+func AddInts(int1 IntToAdd, int2 int) int {
         return int1 + int2
 }
 
