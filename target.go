@@ -31,7 +31,7 @@ func JoinStrings(words []string) string {
 }
 
 func AddInts(int1 IntToAdd, int2 int) int {
-        return int1 + int2
+        return int1.A + int2
 }
 
 func (s StringToAdd) AppendFoo() string {
